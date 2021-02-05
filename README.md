@@ -10,6 +10,7 @@
   * In bash, use this command to install a package: `python -m pip install packagename`.
   * always update `pip` after creating a new virtual environment `python -m pip install --upgrade pip`.
   * for more information about how to create an environment follow this guide: https://code.visualstudio.com/docs/python/tutorial-flask
+  * conda is an environment manager which comes with anaconda. To get info about conda environments: `conda info --envs`. then `conda update conda`. then `conda create --name envname`. you can upgrade all libraries by running `conda update all`. Removing an env: `conda remove --name envname --all` `all` flag indicates that we want to remove all the packages installed in that environment.
 * If while installing a package like `pandas` you get a `permission denied` error, consider installing it using `--user` flag: `pip install --user pandas`. This would install `pandas` in a different directory: `C:\Users\Saeed\AppData\Roaming\Python\Python37\site-packages` (on windows).
 * In order to make a `requirement.txt` file which contains the package names and versions of the current environment, first make sure that you have activated the environment and `pip freeze > requirements.txt`.
 
